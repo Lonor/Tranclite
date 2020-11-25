@@ -1,5 +1,5 @@
 # Tranclite
-Tanclite means `Tanslate with CLI`.
+Tranclite means `Translate with CLI`.
 A simple CLI client for translating English to Chinese
 
 ## Usage
