@@ -17,6 +17,10 @@ const spinner = input => {
     return res;
 })(commands[0]).then(r => {
     let msg = JSON.parse(r.body);
-    process.spinner.succeed(msg.basic.explains[0]);
+    if (msg.basic) {
+        process.spinner.succeed(msg.basic.explains[0]);
+    } else {
+        process.spinner.succeed(msg.translation[0]);
+    }
 })
 
