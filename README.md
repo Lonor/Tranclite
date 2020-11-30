@@ -23,6 +23,8 @@ To uninstall it, try:
 npm run cancel
 ```
 
+https://www.npmjs.com/package/tranclite
+
 It will returns the word's Chinese translation. This project is just getting started.
 It's a demo project for the author learning Node.js and CLI clients development.
 Have fun.
