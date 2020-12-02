@@ -12,20 +12,23 @@ npm i
 npm run dev
 ```
 
-Use the CLI:
+or install from npm:
+```
+npm i tranclite -g
+```
+
+Then you can use the CLI, It will returns the word's Chinese translation:
 
 ```shell script
 tranclite [word]
 ```
 
-To uninstall it, try:
+To uninstall it from code, try:
 ```shell script
 npm run cancel
 ```
 
-https://www.npmjs.com/package/tranclite
-
-It will returns the word's Chinese translation. This project is just getting started.
+This project is just getting started.
 It's a demo project for the author learning Node.js and CLI clients development.
 Have fun.
 
