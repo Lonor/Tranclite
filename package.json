@@ -1,6 +1,6 @@
 {
   "name": "tranclite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple CLI client for translating English to Chinese",
   "main": "cli.js",
   "engines": {
@@ -10,9 +10,10 @@
     "tranclite": "cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard && node cli.js hi",
     "dev": "npm link",
-    "cancel": "npm unlink"
+    "cancel": "npm unlink",
+    "standard": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/Lonor/Tranclite/issues"
   },
-  "homepage": "https://github.com/Lonor/Tranclite#readme"
+  "homepage": "https://github.com/Lonor/Tranclite#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
 }
