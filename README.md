@@ -1,3 +1,6 @@
+![Tranclite CI](https://github.com/Lonor/Tranclite/workflows/Tranclite%20CI/badge.svg?branch=main)
+
+
 # Tranclite
 Tranclite means `Translate with CLI`.
 A simple CLI client for translating English to Chinese
