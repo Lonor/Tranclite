@@ -1,26 +1,29 @@
 {
   "name": "tranclite",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A simple CLI client for translating English to Chinese",
-  "main": "cli.js",
+  "main": "typecli.ts",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "bin": {
-    "tranclite": "cli.js"
+    "tranclite": "./dist/typecli.js"
   },
   "scripts": {
-    "test": "standard && node cli.js hi",
-    "dev": "npm link",
-    "cancel": "npm unlink",
-    "standard": "standard --fix"
+    "dev": "tsc && npm link && chmod +x ./dist/typecli.js",
+    "cancel": "npm unlink tranclite && npm run clean",
+    "test": "tsc && node ./dist/typecli.js",
+    "clean": "rm -rf ./dist",
+    "e2e": "npm run dev && tranclite end-to-end"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Lonor/Tranclite.git"
   },
   "keywords": [
-    "cli"
+    "cli",
+    "translate",
+    "tranclite"
   ],
   "author": "Lawrence",
   "license": "MIT",
@@ -34,6 +37,6 @@
   },
   "homepage": "https://github.com/Lonor/Tranclite#readme",
   "devDependencies": {
-    "standard": "16.0.3"
+    "typescript": "^4.2.3"
   }
 }
